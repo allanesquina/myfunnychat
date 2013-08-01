@@ -1,11 +1,8 @@
-var express = require('express'),
+var express =  require('express'),
 	app = express(),
 	server = require('http').createServer(app),
-	io = require('socket.io').listen(server);
-
-var userList = [];
-
-server.listen(8080);
+	io = require('socket.io').listen(server),
+  userList = [];
 
 app.use(express.static(__dirname + '/static'));
 
@@ -26,5 +23,6 @@ io.sockets.on('connection', function(socket) {
 		userList[socket.id] = data;
 		console.log(userList);
 	});
-
 });
+
+server.listen(8080);
