@@ -1,60 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>Simple Chat With Node.js</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet" media="screen">   
-    <script src="/socket.io/socket.io.js"></script>
-  
-  </head>
-  <body>
-    <div class="container">
-    <div class="navbar navbar-inverse">
-  <div class="container">
+    <head>
+        <title>Simple Chat With Node.js</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet" media="screen">   
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
 
-    <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
+    <body>
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="container">
+                    <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
 
-    <!-- Be sure to leave the brand out there if you want it shown -->
-    <a class="navbar-brand" href="#">Menu</a>
+                    <!-- Be sure to leave the brand out there if you want it shown -->
+                    <a class="navbar-brand" href="#">Menu</a>
 
-    <!-- Place everything within .navbar-collapse to hide it until above 768px -->
-    <div class="nav-collapse collapse navbar-responsive-collapse">
-      ...
-    </div><!-- /.nav-collapse -->
-  </div><!-- /.container -->
-</div><!-- /.navbar -->
-    <div class="input-group">
-      <input id="msg" type="text" class="form-control">
-      <span class="input-group-btn">
-       <a class="btn btn-default" href="javascript:Control.Chat.sendMessage();">Send</a> 
-      </span>
-    </div><!-- /input-group -->     
+                    <!-- Place everything within .navbar-collapse to hide it until above 768px -->
+                    <div class="nav-collapse collapse navbar-responsive-collapse">
+                        ...
+                    </div><!-- /.nav-collapse -->
+                </div><!-- /.container -->
+            </div><!-- /.navbar -->
+
+        <div class="input-group">
+            <input id="msg" type="text" class="form-control">
+            <span class="input-group-btn">
+                <a class="btn btn-default" href="javascript:Control.Chat.sendMessage();">Send</a> 
+            </span>
+        </div><!-- /input-group -->     
       
-      <div id="contentMSG"/>  
+        <div id="contentMSG"/></div>
     
-    </div>
-    
-   
-    
-    <div class="modal fade" id="myModal" data-backdrop="false">
-  <div class="modal-dialog">
-    <div class="modal-content">      
-      <div class="modal-body">
-        <p>Connecting to server...</p>
-         <div class="progress progress-striped active">
-          <div class="progress-bar" style="width: 100%"></div>
-        </div>
-      </div>     
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
-     <script src="/js/control.js"></script>
-  </body>
+        <div class="modal fade" id="myModal" data-backdrop="false">
+            <div class="modal-dialog">
+                <div class="modal-content">      
+                    <div class="modal-body">
+                        <p>Connecting to server...</p>
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                    </div>     
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+        <script src="/js/control.js"></script>
+    </body>
 </html>
