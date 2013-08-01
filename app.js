@@ -16,7 +16,7 @@ io.sockets.on('connection', function(socket) {
 		io.sockets.emit('wMsg', {
 			content: userList[socket.id].name + " : " + data
 		});
-		//socket.emit('wMsg', { content: data });
+ 		//socket.emit('wMsg', { content: data });
 	});
 
 	socket.on('userProfile', function(data) {
