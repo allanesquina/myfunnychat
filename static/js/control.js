@@ -2,7 +2,7 @@ var Control = {};
 var socket = io.connect('http://simplechat-20116.sae1.actionbox.io:8080/');
 
 
-Control.prototype.Chat = {
+Control.Chat = {
  sendMessage: function() {
    var msg = document.getElementById('msg');
    socket.emit('sendMsg', msg.value);
